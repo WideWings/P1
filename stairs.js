@@ -1,4 +1,3 @@
-//first step is 0
 var n = 5;
 console.log(n);
 var step_type = [1, 2, 5];
