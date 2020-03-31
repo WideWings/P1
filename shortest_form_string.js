@@ -2,10 +2,12 @@ var source = "xyz";
 var target = "xzyxz";
 
 //main function
-function substring(source, target){
+function shortest_form_string(source, target){
   var num_sub_sequences = 0;
   var all_sub_strings = [];
+
   var remaining = target;
+
   while (remaining.length > 0){
     var sub_sequence = "";
     var i = 0;
@@ -20,8 +22,8 @@ function substring(source, target){
       return -1;
     }
 
-    all_sub_strings = all_sub_strings.concat(sub_sequence);
     num_sub_sequences++;
+    all_sub_strings = all_sub_strings.concat(sub_sequence);
     remaining = remaining.substring(sub_sequence.length);
   }
   
@@ -32,4 +34,4 @@ function substring(source, target){
 console.log('Source:', source);
 console.log('Target:', target);
 
-console.log(substring(source, target));
+console.log(shortest_form_string(source, target));
