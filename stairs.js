@@ -1,6 +1,6 @@
-var n = 5;
+var n = 4;
 console.log(n);
-var step_type = [1, 2, 5];
+var step_type = [1, 2];
 console.log(step_type);
 
 //Main Function
